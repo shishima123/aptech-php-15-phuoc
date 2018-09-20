@@ -1,0 +1,27 @@
+.background-color {
+    background-color: aqua;
+}
+
+.per-info {
+    height: 100px;
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+}
+
+.div-image {
+    float: left;
+    width: 250px;
+}
+
+.image {
+    height: 232px;
+    width: 217px;
+}
+
+.Info {
+    height: 300px;
+    float: center;
+}
