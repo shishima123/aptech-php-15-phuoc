@@ -1,0 +1,24 @@
+body {
+    background-color: #333;
+    height: 100vh;
+}
+
+.Header--height {
+    height: 20%;
+    /* background-color: blue; */
+}
+
+.Content--height {
+    height: 70%;
+    /* background-color: red; */
+}
+
+.Footer--height {
+    height: 10%;
+    /* background-color: green; */
+}
+.Border-custom{
+    border-bottom: 0.25rem solid white;
+    padding-bottom: 5px;
+    /* color: white!important; */
+}
