@@ -1,0 +1,20 @@
+.Header--height {
+    height: 71px;
+}
+
+.Intro--height {
+    height: 253px;
+}
+
+.Font--custom {
+    font-weight: 400;
+    font-size: 80%;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.card-deck .card {
+    min-width: 220px;
+}
