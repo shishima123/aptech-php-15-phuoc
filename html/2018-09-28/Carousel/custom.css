@@ -1,0 +1,28 @@
+.Header--height {
+    height: 100px;
+}
+
+.Bar--size {
+    font-size: 50px;
+}
+
+.Content--carousel--size {
+    width: 90%;
+}
+
+.Backgroud--color {
+    background-color: #333;
+}
+
+.Carousel--caption-bg {
+    background: rgba(0, 0, 0, 0.8);
+    /* width: 100%; */
+    padding: 5px;
+}
+
+.Carousel--phim--noi--bat--height{
+height: 500px
+}
+a{
+    text-decoration: none! important;
+}
