@@ -1,28 +1,58 @@
 .Header--height {
-    height: 100px;
+  height: 100px;
+}
+.Container--backgound--color,
+.Tag--background--color {
+  background-color: #222;
+}
+
+.Body--background--color {
+  background-color: #333;
+}
+
+.Cards--background--color,
+.Footer--background--color {
+  background-color: #111;
 }
 
 .Bar--size {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .Content--carousel--size {
-    width: 90%;
-}
-
-.Backgroud--color {
-    background-color: #333;
+  width: 90%;
 }
 
 .Carousel--caption-bg {
-    background: rgba(0, 0, 0, 0.8);
-    /* width: 100%; */
-    padding: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  /* width: 100%; */
+  padding: 5px;
 }
 
-.Carousel--phim--noi--bat--height{
-height: 500px
+.Carousel--phim--noi--bat--height {
+  height: 400px;
 }
-a{
-    text-decoration: none! important;
+
+a {
+  text-decoration: none !important;
+}
+
+.Cards--group--img {
+  height: 290px;
+  width: 268.25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media (min-width: 768px) and (max-width: 991px) /*man hinh Ipad*/ {
+  .Cards--group--img {
+    height: 200px;
+    width: 163.25px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) /*man hinh Ipad Pro*/ {
+  .Cards--group--img {
+    height: 250px;
+    width: 218.41px;
+  }
 }
