@@ -10,7 +10,7 @@
 
 <body class="Body--background--color">
     <!-- Header -->
-    <div class="container-fluid Header--height">
+    <!-- <div class="container-fluid Header--height">
         <div class="row bg-dark">
             <div class="col-6 col-md-3 d-flex justify-content-start align-items-center">
                 <a href="#"><img class="mt-1" src="logo.png" alt="logo" style="height:80px; width:80px"></a>
@@ -42,38 +42,39 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- nav -->
-    <!-- <div class="container">
+    <div class="container-fluid px-0 bg-dark">
         <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-md navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            <div class="col-10 px-0 offset-1">
+                <nav class="navbar navbar-expand-md navbar-light bg-dark p-0">
+                    <a href="#"><img class="mt-1" src="logo.png" alt="logo" style="height:80px; width:80px"></a>
+                    <div class="text-left w-50"><h3 class="text-light">text-center</h3></div>
+                    
+                <a href="#">
+                    <button class="navbar-toggler border-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="fa fa-bars fa-2x text-light"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link text-light font-weight-bold font text-center" href="#">PHIM MỚI <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link text-light font-weight-bold text-center" href="#">THỂ LOẠI</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link text-light font-weight-bold text-center" href="#">PHIM LẺ</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown link
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link text-light font-weight-bold text-center" href="#">PHIM BỘ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light font-weight-bold text-center" href="#">PHIM CHIẾU RẠP</a>
+                            </li>
                                 </div>
                             </li>
                         </ul>
@@ -81,7 +82,7 @@
                 </nav>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- container Phim noi bat -->
     <div class="container mt-4 mt-md-2">
@@ -95,7 +96,8 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100 " src="1.jpg" alt="First slide">
+                            <div class="Carousel--phim-noi-bat--img" style="background-image:url(./1.jpg)"></div>
+                            <!-- <img class="d-block w-100 " src="1.jpg" alt="First slide"> -->
                             <div class="carousel-caption Carousel--caption-bg">
                                 <h6 class="text-light">PACIFIC RIM UPRISING</h6>
                                 <p class="text-light d-none d-md-block">Đại chiến Thái Bình Dương: Trỗi dậy là phim
@@ -192,38 +194,42 @@
                         <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color ">
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./8.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Avengers 3: Infinity War</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./4.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">The Wonder Woman</h6>
+                                </a>
+                            </div>
+                            <div class="card-footer border-top-0 p-0 pb-xl-2">
+                            </div>
+                        </div>
+
+                        <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color">
+                            <div class="card-body p-0">
+                                <a href="#">
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./5.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">Jurassic World 2: Fallen Kingdom</h6>
                                 </a>
                             </div>
                             <div class="card-footer border-top-0 p-0 pb-xl-2">
                             </div>
                         </div>
                         <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color">
+
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./9.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Black Panther</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./6.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">Ant-Man and the Wasp</h6>
                                 </a>
+
                             </div>
                             <div class="card-footer border-top-0 p-0 pb-xl-2">
                             </div>
                         </div>
                         <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color">
+
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./10.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Spider-Man: Homecoming</h6>
-                                </a>
-                            </div>
-                            <div class="card-footer border-top-0 p-0 pb-xl-2">
-                            </div>
-                        </div>
-                        <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color">
-                            <div class="card-body p-0">
-                                <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./11.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Furious / Legenda o Kolovrate</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./7.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">Deadpool 2</h6>
                                 </a>
                             </div>
                             <div class="card-footer border-top-0 p-0 pb-xl-2">
@@ -339,8 +345,8 @@
                         <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color ">
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./8.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Avengers 3: Infinity War</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./12.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">The Meg</h6>
                                 </a>
                             </div>
                             <div class="card-footer border-top-0 p-0 pb-xl-2">
@@ -349,8 +355,8 @@
                         <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color">
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./9.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Black Panther</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./13.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">The Monkey King 3: Kingdom of Women</h6>
                                 </a>
                             </div>
                             <div class="card-footer border-top-0 p-0 pb-xl-2">
@@ -359,8 +365,8 @@
                         <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color">
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./10.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Spider-Man: Homecoming</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./14.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">Detective Conan Movie 22: Zero the Enforcer</h6>
                                 </a>
                             </div>
                             <div class="card-footer border-top-0 p-0 pb-xl-2">
@@ -369,8 +375,8 @@
                         <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color">
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./11.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Furious / Legenda o Kolovrate</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./15.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">Doraemon: Nobita's Treasure Island</h6>
                                 </a>
                             </div>
                             <div class="card-footer border-top-0 p-0 pb-xl-2">
@@ -381,8 +387,8 @@
                         <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color ">
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./4.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">The Wonder Woman</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./16.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">Rampage</h6>
                                 </a>
                             </div>
                             <div class="card-footer border-top-0 p-0 pb-xl-2">
@@ -392,8 +398,8 @@
                         <div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color">
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./5.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Jurassic World 2: Fallen Kingdom</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./17.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">Ready Player One</h6>
                                 </a>
                             </div>
                             <div class="card-footer border-top-0 p-0 pb-xl-2">
@@ -403,8 +409,8 @@
 
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./6.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Ant-Man and the Wasp</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./18.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">Transformers 5: The Last Knight</h6>
                                 </a>
 
                             </div>
@@ -415,8 +421,8 @@
 
                             <div class="card-body p-0">
                                 <a href="#">
-                                    <div class="mt-3 Cards--group--img" style="background-image: url(./7.jpg);"></div>
-                                    <h6 class="card-title text-light mt-3 mx-4">Deadpool 2</h6>
+                                    <div class="mt-3 Cards--group--img" style="background-image: url(./19.jpg);"></div>
+                                    <h6 class="card-title text-light mt-3 mx-4">Guardians of the Galaxy Vol. 2</h6>
                                 </a>
                             </div>
                             <div class="card-footer border-top-0 p-0 pb-xl-2">
@@ -455,38 +461,38 @@
     <!-- footer -->
     <div class="container-fluid mt-3 Footer--background--color">
         <div class="container ">
-                <div class="row d-flex flex-column d-lg-flex flex-lg-row justify-content-center align-items-lg-center">
-                        <div class="col-12 mt-lg-4 col-lg-3 text-center d-none d-lg-block">
-                            <p><a class="text-light" href="#">Giới thiệu</a></p>
-                            <p class="my-0"><a class="text-light" href="#">Trang chủ</a></p>
-                            <p class="my-0"><a class="text-light" href="#">Giới thiệu</a></p>
-                            <p class="my-0"><a class="text-light" href="#">Facebook</a></p>
-                        </div>
-                        <div class="col-12 col-lg-3 mt-4 text-center d-none d-lg-block">
-                            <p><a class="text-light" href="#">Đóng góp</a></p>
-                            <p class="my-0"><a class="text-light" href="#">Hợp tác nội dung</a></p>
-                            <p class="my-0"><a class="text-light" href="#">Hướng dẫn sử dụng</a></p>
-                            <p class="my-0"><a class="text-light" href="#">Liên hệ quảng cáo</a></p>
-                        </div>
-                        <div class="col-12 col-lg-3 mt-4 text-center d-none d-lg-block">
-                            <p><a class="text-light" href="#">Quy định</a></p>
-                            <p class="my-0"><a class="text-light" href="#"> Điều khoản sử dụng</a></p>
-                            <p class="my-0"><a class="text-light" href="#">Chính sách riêng tư</a></p>
-                            <p class="my-0"><a class="text-light" href="#"> Khiếu nại bản quyền</a></p>
-                        </div>
-                        <div class="col-12 col-lg-3 mt-4 text-center d-none d-lg-block">
-                            <p><a class="text-light" href="#">Trợ giúp</a></p>
-                            <p class="my-0"><a class="text-light" href="#"> Hỏi đáp</a></p>
-                            <p class="my-0"><a class="text-light" href="#">Liên hệ</a></p>
-                            <p class="my-0"><a class="text-light" href="#"> Tin tức</a></p>
-                        </div>
-                        <div class="col-12 mt-3 text-center border-top pt-2">
-                            <p class="text-light">Copyright © 2018. All Rights Reserved. Nội dung được chia sẻ miễn phí giữa
-                                các
-                                thành viên.</p>            
-                        </div>
-                    </div>
-        </div>       
+            <div class="row d-flex flex-column d-lg-flex flex-lg-row justify-content-center align-items-lg-center">
+                <div class="col-12 mt-lg-4 col-lg-3 text-center d-none d-lg-block">
+                    <p><a class="text-light" href="#">Giới thiệu</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Trang chủ</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Giới thiệu</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Facebook</a></p>
+                </div>
+                <div class="col-12 col-lg-3 mt-4 text-center d-none d-lg-block">
+                    <p><a class="text-light" href="#">Đóng góp</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Hợp tác nội dung</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Hướng dẫn sử dụng</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Liên hệ quảng cáo</a></p>
+                </div>
+                <div class="col-12 col-lg-3 mt-4 text-center d-none d-lg-block">
+                    <p><a class="text-light" href="#">Quy định</a></p>
+                    <p class="my-0"><a class="text-light" href="#"> Điều khoản sử dụng</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Chính sách riêng tư</a></p>
+                    <p class="my-0"><a class="text-light" href="#"> Khiếu nại bản quyền</a></p>
+                </div>
+                <div class="col-12 col-lg-3 mt-4 text-center d-none d-lg-block">
+                    <p><a class="text-light" href="#">Trợ giúp</a></p>
+                    <p class="my-0"><a class="text-light" href="#"> Hỏi đáp</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Liên hệ</a></p>
+                    <p class="my-0"><a class="text-light" href="#"> Tin tức</a></p>
+                </div>
+                <div class="col-12 mt-3 text-center border-top pt-2">
+                    <p class="text-light">Copyright © 2018. All Rights Reserved. Nội dung được chia sẻ miễn phí giữa
+                        các
+                        thành viên.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
