@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div id="tbl"></div>
+    <script>
+        var table = '<table id="table" class="table"></table>';
+        $('#tbl').append(table);
+
+        var thead = '<thead id="thead"></thead>';
+        $(thead).appendTo('#table');
+        var trHead = '<tr id="tr-head"></tr>';
+        $(trHead).appendTo('#thead');
+        var thHead = '<th class="bg-dark">#</th><th>Tên</th><th>Email</th>';
+        $(thHead).appendTo('#tr-head');
+
+        var tbody = '<tbody id="tbody"></tbody>'
+        $(tbody).appendTo('#table');
+        var trBody = '<tr id="tr-body"></tr>';
+        $(trBody).appendTo("#tbody");
+        var thBody = '<th>1</th><td>Phuoc</td><td>Shishima21@gmail.com</td>';
+        $(thBody).appendTo('#tr-body');
+    </script>
+</body>
+
+</html>

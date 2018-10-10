@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./bootstrap4.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <div id="tbl">
+    </div>
+
+    <script>
+        var table = '<table id="table" class="table"></table>';
+        $('#tbl').append(table);
+
+        var thead = '<thead id="thead"></thead>';
+        $(thead).appendTo('#table');
+        var trHead = '<tr id="tr-head"></tr>';
+        $(trHead).appendTo('#thead');
+        var thHead = '<th >STT</th><th >ID</th><th >Tên</th><th >Email</th><th >Password</th><th >Created_at</th><th >Updated_at</th>';
+        $(thHead).appendTo('#tr-head');
+
+        var tbody = '<tbody id="tbody"></tbody>'
+        $(tbody).appendTo('#table');
+
+        $(document).ready(function () {
+            var data;
+            $.ajax({
+                dataType: "json",
+                url: 'data.json',
+                data: data,
+                success: function (data) {
+                    for (x in data.users) {
+                        number = parseInt(x);//convert string to interger
+                        var stt = number + 1;
+                        var trBody = '<tr id="tr-body' + x + '"></tr>';
+                        $(trBody).appendTo("#tbody");
+                        var thBody = '<th id="abc' + x + '">' + stt + '</th>' + '<td >' + data.users[x].id + '</td>' + '<td >' + data.users[x].name + '</td>' + '<td >' + data.users[x].email + '</td>' + '<td >' + data.users[x].password + '</td>' + '<td >' + data.users[x].created_at + '</td>' + '<td >' + data.users[x].updated_at + '</td>';
+                        $(thBody).appendTo('#tr-body' + x);
+                        $('#abc' + x).addClass('bg-primary');
+                    }
+                    $('td').addClass('border border-dark');//hỏi thử vì sao phải đặt 3 kái add class này vào trong chỗ success mới chạy
+                    $('th').addClass('border border-dark');
+                    $('#thead').addClass('bg-success');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

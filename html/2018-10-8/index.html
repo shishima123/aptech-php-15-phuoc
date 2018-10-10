@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var ten = document.createElement('h1');
+        var tuoi = document.createElement('p');
+        var text1 = document.createTextNode("nguyen dinh phuoc");
+        var text2 = document.createTextNode("25 tuoi");
+        ten.appendChild(text1);
+        tuoi.appendChild(text2);
+        document.body.appendChild(ten);
+        document.body.appendChild(tuoi);
+    </script>
+
+    <!-- <script>
+        $(document).ready(function () {
+            ten = document.createElement('h1');
+            tuoi = document.createElement('p');
+            document.body.appendChild(ten);
+            document.body.appendChild(tuoi);
+            $("h1").append("nguyen dinh phuoc");
+            $("p").append("abc");
+        })
+    </script> -->
+
+    <!-- <script>
+        var x = document.createElement("Table");
+        x.setAttribute("id", "myTable");
+        document.body.appendChild(x);
+        var y = document.createElement("TR");
+        y.setAttribute("id", "myTr");
+        document.getElementById("myTable").appendChild(y);
+        var z = document.createElement("TD");
+        var t = document.createTextNode("aaaaaaaaaaaaaaaaaaaaaa");
+        z.appendChild(t);
+        document.getElementById("myTr").appendChild(z);
+
+        var x = document.createElement("Table");
+        x.setAttribute("id", "myTable");
+        document.body.appendChild(x);
+        var y = document.createElement("TR");
+        y.setAttribute("id", "myTr");
+        document.getElementById("myTable").appendChild(y);
+        var z = document.createElement("TD");
+        var t = document.createTextNode("aaaaaaaaaaaaaaaaaaaaaa");
+        z.appendChild(t);
+        document.getElementById("myTr").appendChild(z);
+
+    </script> -->
+    <!-- <div id="tbl"></div>
+    <script>
+        var table = '<table id="table"></table>';
+        $('#tbl').append(table);
+        // var thead
+        var thead='<'
+    </script> -->
+</body>
+
+</html>
