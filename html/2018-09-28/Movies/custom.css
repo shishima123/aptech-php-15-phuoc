@@ -1,5 +1,5 @@
-.Header--height {
-  height: 100px;
+.Header--background {
+  background-image: url(./bg-header1.png);
 }
 .Container--backgound--color,
 .Tag--background--color {

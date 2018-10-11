@@ -1,0 +1,141 @@
+{
+  "phim_noi_bat": [
+    {
+      "id": 1,
+      "name": "PACIFIC RIM UPRISING",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/xem-phim.html",
+      "image_src": "./images/1.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 2,
+      "name": "Beauty and the Beast",
+      "path": "http://www.phimmoi.net/phim/nguoi-dep-va-quai-vat-i2-3879/",
+      "image_src": "./images/2.jpg",
+      "content": "Người đẹp và quái vật là một phim điện ảnh nhạc kịch kỳ ảo lãng mạn của Mỹ năm 2017 được đạo diễn bởi Bill Condon với phần kịch bản phim do Stephen Chbosky và Evan Spiliotopoulos thực hiện."
+    },
+    {
+      "id": 3,
+      "name": "Pirates of the Caribbean: Dead Men Tell No Tales",
+      "path": "http://www.phimmoi.net/phim/cuop-bien-vung-caribbe-5-salazar-bao-thu-4280/",
+      "image_src": "./images/3.jpg",
+      "content": "Pirates of the Caribbean: Salazar báo thù là một phim điện ảnh anh hùng dân gian kỳ ảo của Mỹ năm 2017. Đây là phần phim thứ năm trong loạt phim Cướp biển vùng Caribbean và đồng thời cũng là phần tiếp nối của Cướp biển vùng Caribbean 4"
+    }
+  ],
+  "phim-bo": [
+    {
+      "id": 4,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/nu-than-chien-binh-wonder-woman-i1-4012/",
+      "image_src": "./images/4.jpg",
+      "content": "Wonder Woman khi đó nàng công chúa Diana của vùng Amazone rời hòn đảo quê nhà để khám phá thế giới và từng bước trở thành một trong những siêu anh hùng vĩ đại nhất thế giới. Dù không có sự xuất hiện của hai trai đẹp Batman Ben Affleck và Superman Henry Cavill nhưng Wonder Woman sẽ có sự tham gia của ngôi sao series Star Trek – Chris Pine."
+    },
+    {
+      "id": 5,
+      "name": "Jurassic World 2: Fallen Kingdom",
+      "path": "http://www.phimmoi.net/phim/the-gioi-khung-long-2-vuong-quoc-sup-do-6506/",
+      "image_src": "./images/5.jpg",
+      "content": "4 năm sau thảm họa Công Viên kỷ Jura bị phá hủy bởi những con khủng long. Một vài con khủng long vẫn còn sống sót trong rừng trong khi Isla Nublar bị con người bỏ hoang. Owen (Chris Pratt) và Claire (Bryce Dallas Howard) đã tiến hành chiến dịch giải cứu những con khủng long còn sống sót khỏi sự tuyệt chủng khi ngọn núi lửa tại khu vực này bắt đầu hoạt động trở lại. Họ vô tình khám phá ra một âm mưu có thể khiến toàn bộ hành tinh đối mặt với một hiểm họa to lớn chưa từng thấy kể từ thời tiền sử."
+    },
+    {
+      "id": 6,
+      "name": "Ant-Man and the Wasp",
+      "path": "http://www.phimmoi.net/phim/nguoi-kien-va-chien-binh-ong-6938/",
+      "image_src": "./images/5.jpg",
+      "content": "Sau trận nội chiến khốc liệt, Scott Lang – anh hùng Người Kiến với khả năng phóng to, thu nhỏ lại phải đối mặt với sự lựa chọn khó khăn trong cuộc sống đời thường: làm siêu anh hùng gánh vác những trách nhiệm nặng nề của thế giới hay làm một người cha có trách nhiệm. Trong lúc ấy, Scott được tiến sĩ Hank Pym và Hope Van Dyne – Chiến Binh Ong triệu tập để thực hiện một nhiệm vụ cấp bách mới. Scott sẽ phải mặc vào bộ áo Người Kiến một lần nữa và chiến đấu bên cạnh chiến binh ong để lật mở những bí ẩn trong quá khứ."
+    },
+    {
+      "id": 7,
+      "name": "Deadpool 2",
+      "path": "http://www.phimmoi.net/phim/quai-nhan-deadpool-2-uncut-i2-5001/",
+      "image_src": "./images/7.jpg",
+      "content": "Deadpool là nhân vật phản anh hùng (anti-hero) cực kỳ được yêu thích trong vũ trụ Marvel. Bộ phim solo của anh khả ái dọn dẹp ngang trái vào năm 2016 đã thành công rực rỡ với doanh thu lên đến 783 triệu USD."
+    },
+    {
+      "id": 8,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 9,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 10,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 11,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    }
+  ],
+  "phim_le": [
+    {
+      "id": 12,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 13,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 14,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 15,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 16,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 17,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 18,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    },
+    {
+      "id": 19,
+      "name": "The Wonder Woman",
+      "path": "http://www.phimmoi.net/phim/sieu-dai-chien-thai-binh-duong-2-troi-day-6129/",
+      "image_src": "./images/4.jpg",
+      "content": "Đại chiến Thái Bình Dương: Trỗi dậy là phim điện ảnh khoa học viễn tưởng của Mỹ năm 2018 do Steven S. DeKnight đạo diễn,với phần kịch bản được viết bởi DeKnight, Emily Carmichael, Kira Snyder và T.S.Nowlin."
+    }
+  ]
+}
