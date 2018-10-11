@@ -1260,11 +1260,11 @@
         for (x in data.users) {
             number = parseInt(x);//convert string to interger
             var stt = number + 1;
-            var trBody = '<tr id="tr-body' + x + '"></tr>';
+            var trBody = '<tr id="tr-body-' + x + '"></tr>';
             $(trBody).appendTo("#tbody");
-            var thBody = '<th id="abc' + x + '">' + stt + '</th>' + '<td >' + data.users[x].id + '</td>' + '<td >' + data.users[x].name + '</td>' + '<td >' + data.users[x].email + '</td>' + '<td >' + data.users[x].password + '</td>' + '<td >' + data.users[x].created_at + '</td>' + '<td >' + data.users[x].updated_at + '</td>';
-            $(thBody).appendTo('#tr-body' + x);
-            $('#abc' + x).addClass('bg-primary');
+            var thBody = '<th id="th-body' + x + '">' + stt + '</th>' + '<td >' + data.users[x].id + '</td>' + '<td >' + data.users[x].name + '</td>' + '<td >' + data.users[x].email + '</td>' + '<td >' + data.users[x].password + '</td>' + '<td >' + data.users[x].created_at + '</td>' + '<td >' + data.users[x].updated_at + '</td>';
+            $(thBody).appendTo('#tr-body-' + x);
+            $('#rg-body' + x).addClass('bg-primary');
         }
         // end table body
 

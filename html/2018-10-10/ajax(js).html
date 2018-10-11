@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./bootstrap4.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+        var tbl = { "text": ["ID", , "Tên", "Email", "Password", "Created_at", "Updated_at"] }
+
+        var div = document.createElement("div");
+        div.id = "tbl";
+        var Table = document.createElement("table");
+        div.appendChild(Table);
+        var tHead = document.createElement("thead");
+        tHead.id = "tHead";
+        tHead.classList.add("bg-success")
+        Table.appendChild(tHead);
+        var trHead = document.createElement("tr");
+        trHead.id = "trHead";
+        tHead.appendChild(trHead);
+
+        for (x in tbl.text) {
+            // console.log(tbl.text[x]);
+            var thHead = document.createElement('th');
+            var th_text = document.createTextNode
+                (tbl.text[x]);
+            thHead.appendChild(th_text);
+            trHead.appendChild(thHead);
+            thHead.className = "border border-dark";
+        };
+
+        var tBody = document.createElement("tbody");
+        tBody.id = "tBody";
+        Table.appendChild(tBody);
+
+        //star json
+        var request = new XMLHttpRequest();
+        request.open('GET', 'data.json', true);
+        request.onreadystatechange = function () {
+            // begin accessing JSON data here
+            var data = JSON.parse(this.response);
+            for (i in data.users) {//vòng for để lấy dữ liệu của mảng users trong data.user Nó chỉ trả về từng object con của users
+                // console.log(data.users[i]);
+                var trBody = document.createElement('tr');
+                tBody.appendChild(trBody);
+                for (n in data.users[i]) { //vòng for để truy cập vào từng object của user
+                    var thBody = document.createElement('th');
+                    thBody.className = "border border-dark";
+                    trBody.appendChild(thBody);
+                    var th_text = document.createTextNode(data.users[i][n]);
+                    thBody.appendChild(th_text);
+                }
+            };
+        }
+        request.send();
+        //end json
+
+
+        document.body.appendChild(div);
+    </script>
+
+</body>
+
+</html>
