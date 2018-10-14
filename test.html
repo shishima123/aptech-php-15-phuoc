@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        var a = [1, 3, 2, 15, 63, 6, 7, 23];
+        console.log(a);
+        for (i = 0; i < a.length - 1; i++) {
+            //   console.log(a[i]);
+            for (j = i + 1; j < a.length; j++) {
+                //   console.log(j);
+                if (a[j] < a[i]) {
+                    trunggian = a[j];
+                    a[j] = a[i];
+                    a[i] = trunggian;
+                    console.log(a)
+                }
+            }
+        }
+        console.log(a)
+    </script>
+
+</body>
+
+</html>

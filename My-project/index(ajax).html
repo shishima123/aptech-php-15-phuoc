@@ -170,12 +170,12 @@
                 <div class="d-flex flex-column align-items-center mt-3">
 
                     <!-- carousel mobile -->
-                    <div id="Phim--le" class="carousel slide Content--carousel--size d-block d-md-none " data-ride="carousel">
+                    <div id="tv-series" class="carousel slide Content--carousel--size d-block d-md-none " data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li data-target="#Phim--le" data-slide-to="0" class="active"></li>
-                            <li data-target="#Phim--le" data-slide-to="1"></li>
-                            <li data-target="#Phim--le" data-slide-to="2"></li>
-                            <li data-target="#Phim--le" data-slide-to="3"></li>
+                            <li data-target="#tv-series" data-slide-to="0" class="active"></li>
+                            <li data-target="#tv-series" data-slide-to="1"></li>
+                            <li data-target="#tv-series" data-slide-to="2"></li>
+                            <li data-target="#tv-series" data-slide-to="3"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -202,11 +202,11 @@
                                     <h6 class="text-light">Furious / Legenda o Kolovrate</h6>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#Phim--le" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#tv-series" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#Phim--le" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#tv-series" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -395,17 +395,6 @@
                 }
                 abc.dien_bottom();
                 }
-                // for (i = 0; i < 4; i++) {
-                //     console.log(i)
-                //     var abc = new _list_item_movie_desktop('top');
-                //     abc.dien_bottom();
-                // }
-                // for (i = 4; i < 8; i++) {
-                //     console.log(i)
-                //     var abc = new _list_item_movie_desktop('bottom');
-                //     abc.dien_bottom();
-                // }
-                // end phim-bo-list item
 
                 function _list_item_movie_desktop(card_list_phim_bo_desktop) {
                     list_phim_bo_desktop = '<div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color mouse-hover"><div class="card-body p-0"><a href="' + data.phim_bo[i].path + '" target="_blank"><div class="mt-3 Cards--group--img" style="background-image: url(' + data.phim_bo[i].image_src + ');"></div><h6 class="card-title text-light mt-3 mx-4">' + data.phim_bo[i].name + '</h6></a></div><div class="card-footer border-top-0 p-0 pb-xl-2"></div></div></div>';
@@ -423,7 +412,3 @@
 </body>
 
 </html>
-<!-- function (data.phim_noi_bat)
-{
-    var list_phim_bo_desktop='<div class="card text-center d-flex justify-content-center mx-1 rounded Cards--background--color "><div class="card-body p-0"><a href="'+data.phim_bo[j].path+'" target="_blank"><div class="mt-3 Cards--group--img" style="background-image: url('+data.phim_bo[j].image_src+');"></div><h6 class="card-title text-light mt-3 mx-4">'+data.phim_bo[j].name+'</h6></a></div><div class="card-footer border-top-0 p-0 pb-xl-2"></div></div></div>'; -->
-<!-- } thử viết hàm hướng đối tượng -->

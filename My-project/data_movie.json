@@ -1,5 +1,5 @@
 {
-  "phim_noi_bat": [
+  "hot_movies": [
     {
       "id": 1,
       "name": "PACIFIC RIM UPRISING",
@@ -22,7 +22,7 @@
       "content": "Pirates of the Caribbean: Salazar báo thù là một phim điện ảnh anh hùng dân gian kỳ ảo của Mỹ năm 2017. Đây là phần phim thứ năm trong loạt phim Cướp biển vùng Caribbean và đồng thời cũng là phần tiếp nối của Cướp biển vùng Caribbean 4"
     }
   ],
-  "phim_bo": [
+  "tv_series": [
     {
       "id": 4,
       "name": "The Wonder Woman",
@@ -80,7 +80,7 @@
       "content": "Đế Chế Bất Diệt đặt trong bối cảnh nước Nga vào giữa thế kỷ 13 Trung Cổ, bị phân chia thành các quân khu đang lần lượt thất thủ khi quân đội Mông Cổ dẫn đầu bởi tướng Bạt Đô hiện thực hóa giấc mộng bá chủ thế giới của Thành Cát Tư Hãn. Sợ hãi trước sức mạnh và sự tàn bạo của quân xâm lược, hầu hết các thái tử Nga đều xin hàng và giao nộp vùng đất của họ cho kẻ thù. Những kẻ xâm lược cướp bóc và đốt cháy các thành phố, nhuộm đất Nga bằng máu, cho đến khi một kiếm sĩ Ryazan Evpaty Kolovrat đứng lên ngăn chặn chúng. Kolovrat dẫn đầu một đội ngũ của hàng trăm chiến binh dũng cảm để trả thù cho gia đình thân yêu, cho dân tộc, và quê hương của anh."
     }
   ],
-  "phim_le": [
+  "movies": [
     {
       "id": 12,
       "name": "The Meg",

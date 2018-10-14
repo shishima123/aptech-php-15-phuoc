@@ -1,5 +1,5 @@
 .Header--background {
-  background-image: url(./bg-header1.png);
+  background-image: url(../bg-header1.png);
 }
 .Container--backgound--color,
 .Tag--background--color {
@@ -29,7 +29,7 @@
   padding: 5px;
 }
 
-a:hover {
+a {
   text-decoration: none !important;
   /* background: rgba(0, 0, 0, 0.8); */
 }

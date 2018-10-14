@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./css/bootstrap4.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies.net</title>
+</head>
+
+<body class="Body--background--color">
+
+    <!-- nav -->
+    <div class="container-fluid px-0 Header--background">
+        <div class="row m-0 ">
+            <div class="col-3 px-0 offset-1 d-flex justify-content-start align-items-center ">
+                <img class="" src="logo.png" alt="logo" style="height:60px; width:60px">
+                <a href="">
+                    <h3 class="text-light m-0">Movies.net</h3>
+                </a>
+            </div>
+            <div class="col-8 d-flex flex-row justify-content-end align-items-center">
+                <nav class="navbar navbar-expand-md navbar-light p-0">
+                    <button class="navbar-toggler border-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars fa-1x text-light"></i>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav pt-2">
+                            <li class="nav-item active">
+                                <a class="nav-link text-light font-weight-bold font text-center" href="#">PHIM MỚI
+                                    <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light font-weight-bold text-center" href="#">THỂ LOẠI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light font-weight-bold text-center" href="#">PHIM LẺ</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-light font-weight-bold text-center" href="#">PHIM BỘ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light font-weight-bold text-center" href="#">PHIM CHIẾU RẠP</a>
+                            </li>
+                            <li class="nav-item">
+                            <form class="form-inline d-flex flex-row ">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button> -->
+                            </form>
+                        </li>
+                            <li class="nav-item d-flex justify-content-center">
+                                <a class="nav-link text-light font-weight-bold text-center " href="#"><i class="fas fa-search h3 pr-2 py-0 m-0">
+                                    </i></a>
+                                <!-- <a href="#" class="text-light font-weight-bold text-center pt-2">Tìm kiếm</a>      -->
+                            </li>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav pt-2">
+                        <li class="nav-item active">
+                            <a class="nav-link text-light font-weight-bold font text-center" href="#">PHIM MỚI
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light font-weight-bold text-center" href="#">THỂ LOẠI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light font-weight-bold text-center" href="#">PHIM LẺ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light font-weight-bold text-center" href="#">PHIM BỘ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light font-weight-bold text-center" href="#">PHIM CHIẾU RẠP</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                        <form class="form-inline d-flex flex-column ">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                        </form>
+                    </li> -->
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link text-light font-weight-bold text-center " href="#"><i class="fas fa-search h3 pr-2 py-0 m-0">
+                                </i></a>
+                            <!-- <a href="#" class="text-light font-weight-bold text-center pt-2">Tìm kiếm</a>      -->
+                        </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- container Phim noi bat -->
+    <div class="container mt-4 mt-md-2">
+        <div class="row">
+            <div class="col-12 px-0 ">
+                <div id="carousel_list_hot_movies" class="carousel slide" data-ride="carousel">
+                    <ol id="hot_movies_number_slide" class="carousel-indicators">
+                        <!-- viet ajax number_slide cua cac carousel -->
+                    </ol>
+
+                    <div id="carousel_inner_hot_movies" class="carousel-inner">
+                    </div>
+                    <!-- viet ajax lay danh sach phim -->
+
+                    <a class="carousel-control-prev mouse-hover" href="#carousel_list_hot_movies" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next mouse-hover" href="#carousel_list_hot_movies" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- container phim bo -->
+    <div class="container mt-5 Container--backgound--color rounded ">
+        <div class="row pt-2 pb-2">
+            <div class="col-12 ">
+                <h1> <span class="badge badge-pill badge-primary mr-5">Phim bộ</span></h1>
+                <div class="d-flex flex-column align-items-center mt-3">
+
+                    <!-- start carousel mobile -->
+
+                    <div id="carousel_list_tv_series" class="carousel slide Content--carousel--size d-block d-md-none "
+                        data-ride="carousel">
+                        <ol id="tv_series_number_slide" class="carousel-indicators">
+                            <!-- viet ajax number_slide cua cac carousel -->
+                        </ol>
+
+                        <div id="carousel_inner_tv_series" class="carousel-inner">
+                        </div>
+                        <!-- viet ajax lay danh sach phim -->
+
+                        <a class="carousel-control-prev mouse-hover" href="#carousel_list_tv_series" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next mouse-hover" href="#carousel_list_tv_series" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- end carousel mobile -->
+
+                    <!-- start group card desktop -->
+                    <div id="card_list_tv_series_desktop_top" class="card-group d-none d-md-block d-md-flex mt-2">
+                        <!-- jax noi dung vao day -->
+                    </div>
+
+                    <div id="card_list_tv_series_desktop_bottom" class="card-group d-none d-md-block d-md-flex mt-2">
+                        <!-- noi dung ajax dien vao day -->
+                    </div>
+                    <!-- end group card desktop -->
+
+                    <!-- start Button xem them -->
+                    <div class=""> <button type="button" class="btn btn-success mt-3 mb-2"> <a class="text-light" href="#">Xem
+                                thêm</a>
+                    </div>
+                    </button>
+                </div>
+                <!-- end button xem them -->
+            </div>
+        </div>
+    </div>
+
+    <!-- container phim le -->
+    <div class="container mt-5 Container--backgound--color rounded ">
+        <div class="row pt-2 pb-2">
+            <div class="col-12 ">
+                <h1> <span class="badge badge-pill badge-success mr-5">Phim lẻ</span></h1>
+                <div class="d-flex flex-column align-items-center mt-3">
+
+                    <!-- carousel mobile -->
+                    <div id="carousel_list_movies" class="carousel slide Content--carousel--size d-block d-md-none "
+                        data-ride="carousel">
+                        <ol id="movies_number_slide" class="carousel-indicators">
+                            <!-- viet ajax number_slide cua cac carousel -->
+                        </ol>
+
+                        <div id="carousel_inner_movies" class="carousel-inner">
+                        </div>
+                        <!-- viet ajax lay danh sach phim -->
+
+                        <a class="carousel-control-prev mouse-hover" href="#carousel_list_movies" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next mouse-hover" href="#carousel_list_movies" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <!-- group card desktop -->
+                    <div id="card_list_movies_desktop_top" class="card-group d-none d-md-block d-md-flex">
+                        <!-- noi dung ajax dien vao day -->
+                    </div>
+                    <div id="card_list_movies_desktop_bottom" class="card-group d-none d-md-block d-md-flex mt-2">
+                        <!-- noi dung ajax dien vao day -->
+                    </div>
+
+                    <!-- Button xem them -->
+                    <div class=""> <button type="button" class="btn btn-success mt-3 mb-2"> <a class="text-light" href="#">Xem
+                                thêm</a>
+                    </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tag -->
+    <div class="container mt-5 Tag--background--color">
+        <div class="row border">
+            <div class="col-12 d-flex align-items-center">
+                <h2 class="text-light">Tag:</h2>
+                <div> <a class="ml-2 text-light" href="#">#Tag 1</a>
+                    <a class="ml-2 text-light" href="#">#Tag 2</a>
+                    <a class="ml-2 text-light" href="#">#Tag 3</a>
+                    <a class="ml-2 text-light" href="#">#Tag 4</a>
+                    <a class="ml-2 text-light" href="#">#Tag 5</a>
+                    <a class="ml-2 text-light" href="#">#Tag 6</a>
+                    <a class="ml-2 text-light" href="#">#Tag 7</a>
+                    <a class="ml-2 text-light" href="#">#Tag 8</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid mt-3 Footer--background--color">
+        <div class="container ">
+            <div class="row d-flex flex-column d-lg-flex flex-lg-row justify-content-center align-items-lg-center">
+                <div class="col-12 mt-lg-4 col-lg-3 text-center d-none d-lg-block">
+                    <p><a class="text-light" href="#">Giới thiệu</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Trang chủ</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Giới thiệu</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Facebook</a></p>
+                </div>
+                <div class="col-12 col-lg-3 mt-4 text-center d-none d-lg-block">
+                    <p><a class="text-light" href="#">Đóng góp</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Hợp tác nội dung</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Hướng dẫn sử dụng</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Liên hệ quảng cáo</a></p>
+                </div>
+                <div class="col-12 col-lg-3 mt-4 text-center d-none d-lg-block">
+                    <p><a class="text-light" href="#">Quy định</a></p>
+                    <p class="my-0"><a class="text-light" href="#"> Điều khoản sử dụng</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Chính sách riêng tư</a></p>
+                    <p class="my-0"><a class="text-light" href="#"> Khiếu nại bản quyền</a></p>
+                </div>
+                <div class="col-12 col-lg-3 mt-4 text-center d-none d-lg-block">
+                    <p><a class="text-light" href="#">Trợ giúp</a></p>
+                    <p class="my-0"><a class="text-light" href="#"> Hỏi đáp</a></p>
+                    <p class="my-0"><a class="text-light" href="#">Liên hệ</a></p>
+                    <p class="my-0"><a class="text-light" href="#"> Tin tức</a></p>
+                </div>
+                <div class="col-12 mt-3 text-center border-top pt-2">
+                    <p class="text-light">Copyright © 2018. All Rights Reserved. Nội dung được chia sẻ miễn phí giữa
+                        các
+                        thành viên.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then custom JS -->
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/my-project.js"></script>
+</body>
+
+</html>
