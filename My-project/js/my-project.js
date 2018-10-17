@@ -1,14 +1,14 @@
 $(document).ready(function(){
     $.get("data_movie.json", function (data) {
-        // start carousel list item
+        // start carousel list item hot_movies
         for (i = 0; i < 3; i++) {
             console.log(i)
             var obj = new _carousel_list_movie('hot_movies');
             obj.appendto_carousel_list();
         };
-        // end carousel list item
+        // end carousel list item hot_movies
     
-        // start card list item
+        // start card list item tv_series and movies
         for (i = 0; i < 8; i++) {
             console.log(i);
             if (i <= 3) {
@@ -29,7 +29,7 @@ $(document).ready(function(){
             var obj = new _carousel_list_movie('movies');
             obj.appendto_carousel_list();
         }
-        // end card list item
+        // end card list item tv_series and movies
     
         function _list_item_movie_desktop(pos_card_list_movie, type_movie) {
             this.pos = pos_card_list_movie;
