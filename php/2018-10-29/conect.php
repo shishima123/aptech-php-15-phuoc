@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 
 // create table
 // $sql = "CREATE TABLE MyGuests (
-// id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+// id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 // firstname VARCHAR(30) NOT NULL,
 // lastname VARCHAR(30) NOT NULL,
 // email VARCHAR(50),
@@ -44,17 +44,17 @@ if ($conn->connect_error) {
 //         echo "id: " . $row["id"] . " - Name: " . $row["firstname"] . " " . $row["lastname"] . "<br>";
 //     }
 // foreach ($result as $x => $x_value) {
-        // echo $x;
-        // echo "<br>";
-        // echo $x_value;
-        // echo "<br>";
-        // var_dump($x_value);
-        // echo "<br>";
-        // echo $x_value["lastname"];
-        // echo "<br>";
-        // echo $x_value['email'];
-        // echo $x_value['lastname'];
-    // }
+// echo $x;
+// echo "<br>";
+// echo $x_value;
+// echo "<br>";
+// var_dump($x_value);
+// echo "<br>";
+// echo $x_value["lastname"];
+// echo "<br>";
+// echo $x_value['email'];
+// echo $x_value['lastname'];
+// }
 // } else {
 //     echo "0 results";
 // }
@@ -62,10 +62,10 @@ if ($conn->connect_error) {
 // kiem tra dang nhap
 $sql = "SELECT id, lastname,email,password FROM MyGuests";
 $result = $conn->query($sql);
-echo "<br>";
+// echo "<br>";
 if ($result->num_rows > 0) {
     // var_dump($_POST);
-    echo "<br>";
+    // echo "<br>";
     $y = 0;
     foreach ($result as $x => $x_value) {
         if ($_POST['email'] === $x_value['email'] & $_POST['password'] === $x_value['password']) {
@@ -81,15 +81,11 @@ if ($result->num_rows > 0) {
 function _print_result()
 {
     if ($GLOBALS['y'] === 1) {
-        echo "Dang nhap thanh cong";
+        echo '<p style="color:green">Dang nhap thanh cong</p>';
     } else {
-        echo "Dang nhap that bai<br>";
+        echo '<p style="color:red">Dang nhap that bai</p>';
         // Header("Location: ./form.php");
     }
 }
 
-
-
-
 $conn->close();
-?>
