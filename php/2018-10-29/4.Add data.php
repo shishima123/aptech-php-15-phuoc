@@ -1,7 +1,11 @@
 <?php
 include 'test_connect.php';
 $conn = connect();
-
+// $servername = "localhost";
+// $username = "root";
+// $password = "789512346";
+// $db = "aptech_php_15_ss4";
+// $conn = new mysqli($servername, $username, $password, $db);
 // echo "Connected successfully";
 $sql = "INSERT INTO users (name, email, password)
 VALUES ('Phuoc', 'Phuoc@example.com', '12345'),

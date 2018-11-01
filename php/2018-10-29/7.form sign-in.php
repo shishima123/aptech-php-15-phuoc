@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row" style="height:100vh">
             <div class="col-12 d-flex justify-content-center align-items-center">
-                <form class="d-flex flex-column align-items-center" action="add sign-in.php" method="POST">
+                <form class="d-flex flex-column align-items-center" action="8.add sign-in.php" method="POST">
 
                     Name:<input class="mb-3" type="text" name="name" placeholder="UserName">
 

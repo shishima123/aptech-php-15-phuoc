@@ -11,7 +11,7 @@
     <div class="container">
     <div class="row" style="height:100vh">
             <div class="col-12 d-flex justify-content-center align-items-center">
-                <form class="d-flex flex-column align-items-center" action="check_sign-up by sql.php" method="POST">
+                <form class="d-flex flex-column align-items-center" action="6.1check_sign-up by sql.php" method="POST">
                     Email:<input class="mb-3" type="email" name="email" placeholder="Email">
 
                     Password: <input class="mb-3" type="password" name="password" placeholder="Password">

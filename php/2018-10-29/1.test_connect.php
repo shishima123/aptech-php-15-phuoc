@@ -14,4 +14,7 @@ function connect()
         die("Connection failed: " . $conn->connect_error);
     }
     return $conn;
+
 }
+
+// var_dump($conn);
