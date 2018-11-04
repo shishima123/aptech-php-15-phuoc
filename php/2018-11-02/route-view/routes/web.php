@@ -12,13 +12,9 @@
  */
 
 Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/phuoc', function () {
     return view('phuoc');
 });
-Route::get('phuoc', function () {
-    // return view('phuoc');
-    return "phuocfdsfsdfsd";
-});
-Route::get('abc', function () {
-    // return view('phuoc');
-    return "abc";
-});
+Route::get('index', 'Controller@index');

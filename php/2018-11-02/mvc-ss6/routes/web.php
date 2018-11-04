@@ -11,14 +11,17 @@
 |
  */
 
-Route::get('/', function () {
-    return view('phuoc');
+Route::get('/', 'Controller@tableUsers');
+// Route::get('/', function () {
+//     return view('list-user-extends');
+// });
+
+Route::get('create-user', function () {
+    return view('create-user-extends');
 });
-Route::get('phuoc', function () {
-    // return view('phuoc');
-    return "phuocfdsfsdfsd";
-});
-Route::get('abc', function () {
-    // return view('phuoc');
-    return "abc";
+Route::get('{id}', 'Controller@showUser');
+Route::get('{id}/edit', 'Controller@editUser');
+
+Route::get('test-edit', function () {
+    return view('edit-user-extends');
 });
