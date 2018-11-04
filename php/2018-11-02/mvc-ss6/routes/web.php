@@ -11,17 +11,17 @@
 |
  */
 
-Route::get('/', 'Controller@tableUsers');
-// Route::get('/', function () {
-//     return view('list-user-extends');
-// });
+Route::get('/', 'Controller@listUsers');
 
 Route::get('create-user', function () {
     return view('create-user-extends');
 });
 Route::get('{id}', 'Controller@showUser');
-Route::get('{id}/edit', 'Controller@editUser');
 
-Route::get('test-edit', function () {
-    return view('edit-user-extends');
-});
+Route::get('{id}/delete', 'Controller@deleteUser');
+
+Route::get('{id}/edit', 'Controller@editUser');
+Route::post('{id}/edit', 'Controller@saveButtonEditUser');
+
+Route::get('create-user', 'Controller@createUserForm');
+Route::post('create-user', 'Controller@createUserButton');

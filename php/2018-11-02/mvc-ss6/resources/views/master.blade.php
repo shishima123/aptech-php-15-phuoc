@@ -13,7 +13,7 @@
     <div class="container mt-3">
         <div class="row">
             <div class="col-2 d-flex justify-content-center align-items-center">
-                <button class="btn btn-primary">Home</button>
+                <a href="{{ asset('/') }}"><button class="btn btn-primary">Home</button></a>
             </div>
             <div class="col-10 d-flex justify-content-center align-items-center ">
                 <h1 class="font-weight-bold">LARAVEL CRUD USERS DEMO
@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-<hr>
+    <hr>
     <div class="container my-2">
         <div class="row">
             <div class="col-12">
@@ -33,11 +33,11 @@
     <div class="container mt-3">
         <div class="d-flex flex-row">
             <div class="col-12 px-0">
-                  @yield('table')
+                @yield('table')
             </div>
         </div>
     </div>
-<hr>
+    <hr>
     <div class="container mb-5">
         <div class="row">
             <div class="col-12">
