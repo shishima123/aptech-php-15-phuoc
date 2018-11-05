@@ -15,7 +15,7 @@ class Controller extends BaseController
 
     public function listUsers()
     {
-        $users = DB::table('users')->get();
+        $users = DB::table('users')->paginate(10);
         return view('list-user-extends', ['users' => $users]);
     }
 

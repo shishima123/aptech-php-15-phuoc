@@ -30,9 +30,14 @@
 </table>
 <div class="d-flex justify-content-center">
     <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#" rel="prev">«</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#" rel="next">»</a></li>
+        <li class="page-item"><a class="page-link" href="{{ $users->url($users->currentPage()-1) }}" rel="prev">«</a></li>
+
+        @for ($i=1;$i<$users->lastPage();$i++)
+        <li class="page-item @if ($users->currentPage()===$i) {{ 'active' }} @endif)">
+        <a class="page-link" href="{{ $users->url($i) }}">{{ $i }}</a></li>
+        @endfor
+
+        <li class="page-item"><a class="page-link" href="{{ $users->url($users->currentPage()+1) }}" rel="next">»</a></li>
     </ul>
 </div>
 @endsection
