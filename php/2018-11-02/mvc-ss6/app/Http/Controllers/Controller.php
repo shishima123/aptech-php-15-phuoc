@@ -50,8 +50,8 @@ class Controller extends BaseController
     public function createUserForm()
     {
         return view('create-user-extends');
-
     }
+
     public function createUserButton(Request $request)
     {
         // $id = $request->id;
