@@ -32,7 +32,7 @@
     <ul class="pagination">
         <li class="page-item"><a class="page-link" href="{{ $users->url($users->currentPage()-1) }}" rel="prev">«</a></li>
 
-        @for ($i=1;$i<$users->lastPage();$i++)
+        @for ($i=1;$i<=$users->lastPage();$i++)
         <li class="page-item @if ($users->currentPage()===$i) {{ 'active' }} @endif)">
         <a class="page-link" href="{{ $users->url($i) }}">{{ $i }}</a></li>
         @endfor
