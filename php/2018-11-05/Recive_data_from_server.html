@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="btn">click me</button>
+    <script>
+        $('#btn').click(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost/aptech-php-15-phuoc/php/2018-11-05/crud%20test_ajax/public/',
+                success: function (data) {
+                    // alert(data);
+                    console.log(data);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
