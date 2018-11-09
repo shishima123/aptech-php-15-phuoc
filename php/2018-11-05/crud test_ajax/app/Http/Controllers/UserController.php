@@ -14,8 +14,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        // $users = DB::table('users')->paginate(10);
-        $users = User::paginate(10);
+        $users = DB::table('users')->paginate(10);
+        // $users = User::paginate(10);
         // return view('list-user-extends', ['users' => $users]);
         // return $users->toArray();
         return response()->json($users);

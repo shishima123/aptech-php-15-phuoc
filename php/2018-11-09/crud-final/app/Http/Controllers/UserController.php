@@ -2,24 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resource.s
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        // $users = DB::table('users')->paginate(10);
         $users = User::paginate(10);
         return view('list-user-extends', ['users' => $users]);
-        // return $users->toJson();
+        // return $users->toArray();
         // return response()->json($users);
-        // return $users;
 
     }
 
@@ -41,19 +40,24 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        // $name = $request->input('name');
-        // $email = $request->input('email');
-        // $password = $request->input('password');
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required',
+            'password' => 'required',
+        ]);
+        // if ($validatedData->fails()) {
+        //     // return route('users.index');
+        //     return ('a');
+        // }
 
-        // DB::table('users')->insert(['name' => $name, 'email' => $email, 'password' => $password]);
-        $User = new User;
+        $user = new User;
 
-        $User->name = $request->name;
-        $User->email = $request->email;
-        $User->password = $request->password;
-        $User->save();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = $request->password;
+        $user->save();
 
-        return redirect('/');
+        return redirect(route('users.index'));
 
     }
 
@@ -102,12 +106,12 @@ class UserController extends Controller
         // $email = $request->input('email');
 
         // DB::table('users')->where('id', $id)->update(['name' => $name, 'email' => $email]);
-        $User = User::find($id);
+        $user = User::find($id);
 
-        $User->name = $request->name;
-        $User->email = $request->email;
-        $User->save();
-        return redirect('/');
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->save();
+        return redirect(route('users.show', $user->id));
     }
 
     /**
@@ -120,7 +124,6 @@ class UserController extends Controller
     {
         $users = User::destroy($id);
         // DB::table('users')->where('id', $id)->delete();
-        return redirect('/');
-
+        return redirect(route('users.index'));
     }
 }
