@@ -40,9 +40,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'name' => 'required|max:255',
-            'email' => 'required',
+        $request->validate([
+            'name' => 'bail|required|max:255|unique:users',
+            'email' => 'bail|required|max:255|unique:users',
             'password' => 'required',
         ]);
         // if ($validatedData->fails()) {
