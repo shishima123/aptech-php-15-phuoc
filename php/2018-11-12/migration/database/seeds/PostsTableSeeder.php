@@ -20,7 +20,7 @@ class PostsTableSeeder extends Seeder
                 'title' => $faker->name,
                 'description' => $faker->text($maxNbChars = 50),
                 'content' => $faker->text($maxNbChars = 100),
-                'category_id' => Category::all()->random()->id,
+                'category_id' => Category::all()->random()->id, //lay ngau nhien gia trị ơ khóa ngoại id của table categories
             ]);
         }
     }
