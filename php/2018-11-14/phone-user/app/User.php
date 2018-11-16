@@ -9,8 +9,9 @@ class User extends Model
 {
     public function Phone()
     {
-        return $this->hasOne('App\Phone', 'user_id');
 
+        return $this->hasOne('App\Phone', 'user_id');
     }
+    protected $fillable = ['name'];
 
 }

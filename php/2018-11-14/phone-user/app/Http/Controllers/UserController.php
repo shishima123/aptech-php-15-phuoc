@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Phone;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -40,7 +41,28 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->name);
+        // $user = User::create([
+        //     'name' => $request->name,
+        // ]);
+        // $insertedId = $user->id;
+        // // $user = User::find($insertedId);
+        // // dd($user->name);
+        // // $user->phone()->save('$insertedId');
+        // Phone::create([
+        //     'phone_number' => $request->phone_number,
+        //     'user_id' => $insertedId,
+        // ]);
+        $user = new User();
+        $user->name = $request->name;
+        $user->save();
+
+        $phone = new Phone();
+        $phone->phone_number = $request->phone_number;
+        $phone->user_id = $user->id;
+        $phone->save();
+
+        return redirect(route('user.index'));
     }
 
     /**
@@ -60,9 +82,11 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit(User $id)
     {
-        //
+        $user = User::with('phone')->find($id->id);
+        // dd($user);
+        return ($user);
     }
 
     /**
@@ -83,8 +107,10 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy(User $id)
     {
-        //
+        Phone::where('user_id', $id->id)->delete();
+        User::destroy($id->id);
+        return Redirect(route('user.index'));
     }
 }
