@@ -53,14 +53,13 @@ class UserController extends Controller
         //     'phone_number' => $request->phone_number,
         //     'user_id' => $insertedId,
         // ]);
-        $user = new User();
-        $user->name = $request->name;
-        $user->save();
 
-        $phone = new Phone();
-        $phone->phone_number = $request->phone_number;
-        $phone->user_id = $user->id;
-        $phone->save();
+        User::create(['name' => $request->name])->phone()->create(['phone_number' => $request->phone_number]);
+
+        // $phone = new Phone();
+        // $phone->phone_number = $request->phone_number;
+        // $phone->user_id = $user->id;
+        // $phone->save();
 
         return redirect(route('user.index'));
     }

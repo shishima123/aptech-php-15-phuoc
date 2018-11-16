@@ -33,8 +33,11 @@
             <tr>
                 <th id="{{ $user->id }}" scope="row">{{ $user->id }}</th>
                 <td>{{ $user->name }}</td>
+                @if(!!$user->phone)
                 <td>{{ $user->phone->phone_number }}</td>
-
+                @else
+                <td>no phone number</td>
+                @endif
                 <td class="d-flex justify-content-around">
                     <form action="{{ $user->id }}" method="GET">
                         <button class="btn btn-primary">Show</button>
