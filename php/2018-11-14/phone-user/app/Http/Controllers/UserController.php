@@ -15,8 +15,12 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::with('phone')->get();
+        $users = User::with('phone')->orderBy('id', 'DESC')->get();
+        // $bs = "http: //localhost/aptech-php-15-phuoc/php/2018-11-14/phone-user/public/css/bs4.css";
+        // return response($bs);
+
         return view('index', ['users' => $users]);
+
         // dd($users);
         // return $users[1]['phone']['phone_number'];
         // return $users[0]->phone->phone_number;
@@ -53,15 +57,17 @@ class UserController extends Controller
         //     'phone_number' => $request->phone_number,
         //     'user_id' => $insertedId,
         // ]);
-
-        User::create(['name' => $request->name])->phone()->create(['phone_number' => $request->phone_number]);
-
+        // dd($request);
         // $phone = new Phone();
         // $phone->phone_number = $request->phone_number;
         // $phone->user_id = $user->id;
         // $phone->save();
 
-        return redirect(route('user.index'));
+        $user = User::create(['name' => $request->name])->phone()->create(['phone_number' => $request->phone_number]);
+        $users = User::with('phone')->find($user->user_id);
+
+        return $users;
+        // return redirect(route('user.index'));
     }
 
     /**
@@ -84,8 +90,10 @@ class UserController extends Controller
     public function edit(User $id)
     {
         $user = User::with('phone')->find($id->id);
-        // dd($user);
-        return ($user);
+        // // dd($user);;
+        // return response()->json(['item_image ' => $user, 'item_something' => $abc]);
+
+        return $user;
     }
 
     /**

@@ -8,7 +8,6 @@
 <body>
     <div id="card_group" class="card-deck"></div>
     <script>
-
         $.get("http://101.0.86.110:6699/api/v1/posts?page=2", function (data) {
             var datajson = data.data.posts.data;
             for (x in datajson) {
@@ -34,7 +33,8 @@
             }
             //tạo ra div card-title là con của div card-> lấy nội dung của phần tittle từ file json
             function _get_title_from_server() {
-                var card_title = '<div id="card-title-' + x + '" class="card-header text-center font-weight-bold"></div>';
+                var card_title = '<div id="card-title-' + x +
+                    '" class="card-header text-center font-weight-bold"></div>';
                 $(card_title).appendTo('#card-' + x)
                 var card__title = datajson[x].title;
                 $("#card-title-" + x).text(card__title);
@@ -47,7 +47,7 @@
                 var card_text = '<p id="card-content-' + x + '" class="card-text"></p>';
                 $(card_text).appendTo("#card-body-" + x);
                 var content = data.data.posts.data[x].content;
-                var new_content = content.replace('img', 'img style="height: 100%; width: 100%"'); 
+                var new_content = content.replace('img', 'img style="height: 100%; width: 100%"');
                 // console.log(new_content);
                 $("#card-content-" + x).html(new_content);
             }
@@ -58,7 +58,6 @@
                 $(card_footer).appendTo("#card-" + x);
             }
         })
-
     </script>
 </body>
 
