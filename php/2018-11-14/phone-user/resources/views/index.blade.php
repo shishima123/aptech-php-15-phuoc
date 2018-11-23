@@ -8,8 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{ asset('css/bs4.css') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     {{-- phải có thẻ meta này để ko bị laravel báo lỗi thiếu token --}}
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
 </head>
 
 <body>

@@ -9,55 +9,62 @@
     <div id="card_group" class="card-deck"></div>
     <script>
         $.get("http://101.0.86.110:6699/api/v1/posts?page=2", function (data) {
-            var datajson = data.data.posts.data;
-            for (x in datajson) {
-                _create_card();
-                // _get_url_img_card_top();
-                _get_title_from_server();
-                _get_content_from_server();
-                _create_card_footer();
-            }
-
-            //tạo div card là con của div card-deck
-            function _create_card() {
-                var card = '<div id="card-' + x + '" class="card">';
-                $(card).appendTo("#card_group");
-            }
-
-            //tạo ra thẻ img là con của div card-> lấy url của ảnh từ file json
-            function _get_url_img_card_top() {
-                var img = '<img id="image-card-' + x + '" src="">';
-                $(img).appendTo("#card-" + x);
-                var url_image = datajson[x].images[0].path;
-                $("#image-card-" + x).attr("src", "http://101.0.86.110:6699/" + url_image);
-            }
-            //tạo ra div card-title là con của div card-> lấy nội dung của phần tittle từ file json
-            function _get_title_from_server() {
-                var card_title = '<div id="card-title-' + x +
-                    '" class="card-header text-center font-weight-bold"></div>';
-                $(card_title).appendTo('#card-' + x)
-                var card__title = datajson[x].title;
-                $("#card-title-" + x).text(card__title);
-            }
-
-            //tạo ra div card-body là con của div card-> lấy nội dung của phần content từ file json
-            function _get_content_from_server() {
-                var card_body = '<div id="card-body-' + x + '" class="card-body text-center">';
-                $(card_body).appendTo("#card-" + x);
-                var card_text = '<p id="card-content-' + x + '" class="card-text"></p>';
-                $(card_text).appendTo("#card-body-" + x);
-                var content = data.data.posts.data[x].content;
-                var new_content = content.replace('img', 'img style="height: 100%; width: 100%"');
-                // console.log(new_content);
-                $("#card-content-" + x).html(new_content);
-            }
-
-            //tạo phần footer của card
-            function _create_card_footer() {
-                var card_footer = '<div id="card-footer-' + x + '" class="card-footer"></div>';
-                $(card_footer).appendTo("#card-" + x);
+            var datajson = data.data.posts;
+            for (x in datajson.data) {
+                _create_card(x);
+                // _get_url_img_card_top(x, data);
+                _get_title_from_server(x, datajson);
+                _get_content_from_server(x, datajson);
+                _create_card_footer(x, data);
             }
         })
+        //tạo div card là con của div card-deck
+        function _create_card(x) {
+            this.x = x;
+            var card = '<div id="card-' + x + '" class="card">';
+            $(card).appendTo("#card_group");
+        }
+
+        //tạo ra thẻ img là con của div card-> lấy url của ảnh từ file json
+        function _get_url_img_card_top(x, datajson) {
+            this.x = x;
+            this.datajson = datajson;
+            var img = '<img id="image-card-' + x + '" src="">';
+            $(img).appendTo("#card-" + x);
+            var url_image = datajson[x].images[0].path;
+            $("#image-card-" + x).attr("src", "http://101.0.86.110:6699/" + url_image);
+        }
+        //tạo ra div card-title là con của div card-> lấy nội dung của phần tittle từ file json
+        function _get_title_from_server(x, datajson) {
+            this.x = x;
+            this.datajson = datajson;
+            var card_title = '<div id="card-title-' + x +
+                '" class="card-header text-center font-weight-bold"></div>';
+            $(card_title).appendTo('#card-' + x)
+            var card__title = datajson.data[x].title;
+            $("#card-title-" + x).text(card__title);
+        }
+
+        //tạo ra div card-body là con của div card-> lấy nội dung của phần content từ file json
+        function _get_content_from_server(x, datajson) {
+            this.x = x;
+            this.datajson = datajson;
+            var card_body = '<div id="card-body-' + x + '" class="card-body text-center">';
+            $(card_body).appendTo("#card-" + x);
+            var card_text = '<p id="card-content-' + x + '" class="card-text"></p>';
+            $(card_text).appendTo("#card-body-" + x);
+            var content = datajson.data[x].content;
+            var new_content = content.replace('img', 'img style="height: 100%; width: 100%"');
+            // console.log(new_content);
+            $("#card-content-" + x).html(new_content);
+        }
+
+        //tạo phần footer của card
+        function _create_card_footer(x) {
+            this.x = x;
+            var card_footer = '<div id="card-footer-' + x + '" class="card-footer"></div>';
+            $(card_footer).appendTo("#card-" + x);
+        };
     </script>
 </body>
 
